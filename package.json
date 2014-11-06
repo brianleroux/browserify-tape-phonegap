@@ -1,0 +1,16 @@
+{
+  "name": "test-on-device",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "b": "browserify test/test-sanity.js > www/bundle.js",
+    "test": "npm run b && npm start",
+    "start": "node node_modules/phonegap/bin/phonegap serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^3.0.2"
+  }
+}
